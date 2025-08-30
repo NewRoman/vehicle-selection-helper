@@ -10,6 +10,8 @@ A modern React application built with the latest technologies for vehicle select
 - **React Query (TanStack Query)** - Powerful server state management
 - **Axios** - HTTP client for API requests
 - **Create React App** - React development environment
+- **ESLint** - Code quality and consistency
+- **Prettier** - Code formatting and style consistency
 
 ## ✨ Features
 
@@ -79,6 +81,11 @@ Axios is configured for:
 - `npm run build` - Builds the app for production
 - `npm test` - Launches the test runner
 - `npm run eject` - Ejects from Create React App (one-way operation)
+- `npm run lint` - Runs ESLint to check code quality
+- `npm run lint:fix` - Automatically fixes ESLint issues
+- `npm run lint:check` - Strict linting with no warnings allowed
+- `npm run format` - Formats code with Prettier
+- `npm run format:check` - Checks if code is properly formatted
 
 ## 🌟 Key Features Demonstrated
 
@@ -98,6 +105,12 @@ Use Tailwind CSS utility classes for styling. Custom CSS can be added to `src/in
 
 ### API Calls
 Add new API functions using Axios and integrate them with React Query hooks.
+
+### Code Quality
+- **ESLint**: Configure rules in `.eslintrc.js`
+- **Prettier**: Configure formatting in `.prettierrc`
+- Run `npm run lint:fix` to automatically fix issues
+- Run `npm run format` to format all code
 
 ## 📱 Browser Support
 
