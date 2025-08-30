@@ -12,6 +12,7 @@ A modern React application built with the latest technologies for vehicle select
 - **Create React App** - React development environment
 - **ESLint** - Code quality and consistency
 - **Prettier** - Code formatting and style consistency
+- **React i18next** - Internationalization and multi-language support
 
 ## ✨ Features
 
@@ -21,6 +22,9 @@ A modern React application built with the latest technologies for vehicle select
 - Clean API integration with Axios
 - Beautiful gradient backgrounds and modern design
 - Example API integration demonstration
+- **Multi-language support** for Ukrainian and English
+- **Organized translations** split by pages and components
+- **Language detection** and switching capabilities
 
 ## 🛠️ Installation
 
@@ -49,7 +53,23 @@ src/
 ├── App.tsx              # Main application component
 ├── index.tsx            # Application entry point with React Query provider
 ├── index.css            # Tailwind CSS imports
-└── ...
+├── i18n/                # Internationalization configuration
+│   ├── index.ts         # Main i18n setup
+│   └── locales/         # Translation files
+│       ├── en/          # English translations
+│       │   ├── common.json
+│       │   ├── home.json
+│       │   └── app.json
+│       └── uk/          # Ukrainian translations
+│           ├── common.json
+│           ├── home.json
+│           └── app.json
+├── components/          # Reusable components
+│   └── LanguageSwitcher.tsx
+├── hooks/               # Custom hooks
+│   └── useLanguage.ts
+└── types/               # TypeScript type definitions
+    └── i18n.ts
 ```
 
 ## 🎨 Tailwind CSS
@@ -111,6 +131,13 @@ Add new API functions using Axios and integrate them with React Query hooks.
 - **Prettier**: Configure formatting in `.prettierrc`
 - Run `npm run lint:fix` to automatically fix issues
 - Run `npm run format` to format all code
+
+### Internationalization
+- **Translation files**: Organized by pages (`home`, `app`) and common elements
+- **Language switching**: Built-in language switcher component
+- **Type safety**: Full TypeScript support for translation keys
+- **Custom hooks**: `useLanguage` hook for easy language management
+- **Auto-detection**: Browser language detection with localStorage persistence
 
 ## 📱 Browser Support
 

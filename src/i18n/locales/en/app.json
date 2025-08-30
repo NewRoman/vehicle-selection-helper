@@ -1,0 +1,35 @@
+{
+  "app": {
+    "name": "Vehicle Selection Helper",
+    "version": "1.0.0",
+    "description": "A comprehensive vehicle management application"
+  },
+  "ui": {
+    "theme": {
+      "light": "Light Theme",
+      "dark": "Dark Theme",
+      "auto": "Auto Theme"
+    },
+    "layout": {
+      "sidebar": "Sidebar",
+      "header": "Header",
+      "footer": "Footer",
+      "main": "Main Content"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "notifications": "Notifications",
+    "privacy": "Privacy",
+    "about": "About"
+  },
+  "errors": {
+    "general": "Something went wrong",
+    "network": "Network error",
+    "notFound": "Page not found",
+    "unauthorized": "Unauthorized access",
+    "serverError": "Server error"
+  }
+}
