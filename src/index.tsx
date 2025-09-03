@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import './i18n'; // Import i18n configuration
 import './index.css';
 import App from './App';
+import { ThemeProvider } from './contexts/ThemeContext';
 import reportWebVitals from './reportWebVitals';
 
 const queryClient = new QueryClient();
@@ -13,9 +14,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <QueryClientProvider client={queryClient}>
-      <App />
-    </QueryClientProvider>
+    <ThemeProvider>
+      <QueryClientProvider client={queryClient}>
+        <App />
+      </QueryClientProvider>
+    </ThemeProvider>
   </React.StrictMode>,
 );
 
