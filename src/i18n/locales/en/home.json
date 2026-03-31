@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Vehicle Selection Helper",
+    "subtitle": "Built with React, TypeScript, Tailwind CSS, React Query & Axios",
+    "description": "A modern React application for vehicle selection and management"
+  },
+  "features": {
+    "title": "Key Features",
+    "react": {
+      "title": "React 19",
+      "description": "Latest React with TypeScript"
+    },
+    "tailwind": {
+      "title": "Tailwind CSS",
+      "description": "Utility-first CSS framework"
+    },
+    "query": {
+      "title": "React Query",
+      "description": "Server state management"
+    }
+  },
+  "api": {
+    "title": "Example API Integration",
+    "response": "API Response:",
+    "loading": "Loading...",
+    "error": "Error:"
+  },
+  "technologies": {
+    "title": "Technologies Used",
+    "description": "Modern development stack for building robust applications"
+  }
+}

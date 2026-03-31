@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Custom Properties for Light and Dark Theme from Figma */
+:root {
+  /* Light mode colors from Figma design system */
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #F3F3FE;
+  --color-bg-tertiary: #DFDFF6;
+  --color-bg-secondary-opaque: rgba(243, 243, 254, 0.9);
+  --color-bg-modal: rgba(0, 0, 0, 0.8);
+  
+  --color-text-primary: #21103F;
+  --color-text-secondary: #6A6A92;
+  --color-text-tertiary: #A1A0C2;
+  --color-text-button: #3DF3C2;
+  
+  --color-fill-primary: #DFDFF6;
+  --color-fill-secondary: #DDDDF0;
+  --color-fill-tertiary: #BCB7D4;
+  --color-fill-button: #311562;
+  
+  --color-separator-non-opaque: #D3D0EC;
+  --color-separator-opaque: rgba(211, 208, 236, 0.5);
+  
+  --color-icon-fill: #21103F;
+  --color-icon-bg: rgba(255, 255, 255, 0.2);
+  
+  /* Brand colors for light mode */
+  --color-brand-orange: #FF4500;
+  --color-brand-orange-light: #FDC0A9;
+  --color-brand-purple: #5F01CB;
+  --color-brand-purple-light: #BB97F0;
+  --color-brand-blue: #2D1C7E;
+  --color-brand-blue-light: #8C8FDB;
+  --color-brand-pink: #F874A3;
+  --color-brand-pink-light: #FFCEDF;
+  --color-brand-sand-dark: #947242;
+  --color-brand-sand: #F8CE92;
+  
+  /* System colors */
+  --color-system-red: #FF453A;
+  --color-system-red-dark: #B42318;
+  --color-system-green: #34C759;
+  --color-system-green-dark: #027A48;
+  --color-system-orange: #F79009;
+  --color-system-orange-dark: #CE5611;
+}
+
+.dark {
+  /* Dark mode colors from Figma design system */
+  --color-bg-primary: #090117;
+  --color-bg-secondary: #100C22;
+  --color-bg-tertiary: #1C1635;
+  --color-bg-secondary-opaque: rgba(16, 12, 34, 0.9);
+  --color-bg-modal: rgba(0, 0, 0, 0.8);
+  
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #9A98C2;
+  --color-text-tertiary: #4F4E78;
+  --color-text-button: #13042D;
+  
+  --color-fill-primary: #211C3D;
+  --color-fill-secondary: #32295A;
+  --color-fill-tertiary: #6C6B99;
+  --color-fill-button: #3DF3C2;
+  
+  --color-separator-non-opaque: #2C2461;
+  --color-separator-opaque: rgba(44, 36, 97, 0.5);
+  
+  --color-icon-fill: #FFFFFF;
+  --color-icon-bg: rgba(255, 255, 255, 0.2);
+  
+  /* Brand colors */
+  --color-brand-orange: #FF4500;
+  --color-brand-orange-light: #FDC0A9;
+  --color-brand-purple: #5F01CB;
+  --color-brand-purple-light: #BB97F0;
+  --color-brand-blue: #2D1C7E;
+  --color-brand-blue-light: #8C8FDB;
+  --color-brand-pink: #F874A3;
+  --color-brand-pink-light: #FFCEDF;
+  --color-brand-sand-dark: #947242;
+  --color-brand-sand: #F8CE92;
+  
+  /* System colors */
+  --color-system-red: #FF453A;
+  --color-system-red-dark: #B42318;
+  --color-system-green: #34C759;
+  --color-system-green-dark: #027A48;
+  --color-system-orange: #F79009;
+  --color-system-orange-dark: #CE5611;
+}
+
+/* Custom styles for smooth theme transitions */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Ensure smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for dark mode */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400 dark:bg-gray-500;
+}

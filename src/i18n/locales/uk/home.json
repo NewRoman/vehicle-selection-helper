@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Помічник вибору транспорту",
+    "subtitle": "Створено з React, TypeScript, Tailwind CSS, React Query та Axios",
+    "description": "Сучасний React додаток для вибору та управління транспортом"
+  },
+  "features": {
+    "title": "Ключові особливості",
+    "react": {
+      "title": "React 19",
+      "description": "Остання версія React з TypeScript"
+    },
+    "tailwind": {
+      "title": "Tailwind CSS",
+      "description": "CSS фреймворк на основі утиліт"
+    },
+    "query": {
+      "title": "React Query",
+      "description": "Управління серверним станом"
+    }
+  },
+  "api": {
+    "title": "Приклад інтеграції API",
+    "response": "Відповідь API:",
+    "loading": "Завантаження...",
+    "error": "Помилка:"
+  },
+  "technologies": {
+    "title": "Використані технології",
+    "description": "Сучасний стек розробки для створення надійних додатків"
+  }
+}
